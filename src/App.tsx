@@ -146,7 +146,7 @@ export default function App() {
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-bakery-crust/40" />
             <input 
               type="text"
-              placeholder="Search for your favorite manakish..."
+              placeholder="Search for your favorite food..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-12 pr-4 py-4 bg-white border border-bakery-crust/10 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-bakery-warm/20 transition-all"

@@ -2,15 +2,15 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Cormorant Garamond", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-serif: "montserrat", serif;
+  --font-sans: "lato", sans-serif;
   
-  --color-bakery-cream: #fdfcf8;
-  --color-bakery-flour: #f5f5f0;
-  --color-bakery-crust: #231f20;
-  --color-bakery-warm: #ed1c24;
-  --color-bakery-gold: #fdb813;
-  --color-bakery-red: #ed1c24;
+  --color-bakery-cream: #c9a574;
+  --color-bakery-flour: #2b2b2b;
+  --color-bakery-crust: #7d8f66;
+  --color-bakery-warm: #f3efe7;
+  --color-bakery-gold: #383838;
+  --color-bakery-red: #a8c07e;
 }
 
 @layer base {
