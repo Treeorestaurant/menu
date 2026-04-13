@@ -5,27 +5,27 @@ import { MenuItem } from '../types';
 const DEFAULT_MENU: MenuItem[] = [
   {
     id: '1',
-    title: 'Zaatar Manakish',
-    description: 'Traditional Lebanese thyme and olive oil flatbread.',
-    price: 150000,
-    category: 'Manakish',
-    imageUrl: 'https://picsum.photos/seed/zaatar/800/600'
+    title: 'chicken mushroom',
+    description: 'sample items please reload the menu.',
+    price: 350000,
+    category: 'Chicken Platters',
+    imageUrl: 'https://drive.google.com/thumbnail?id=18CE6SHJIdx3vYIY0ES48_xD1T2YarqLF&sz=s800'
   },
   {
     id: '2',
-    title: 'Cheese Manakish',
-    description: 'Freshly baked flatbread topped with Akkawi cheese.',
+    title: 'Chicken crispy',
+    description: 'sample items please reload the menu.',
     price: 350000,
-    category: 'Manakish',
-    imageUrl: 'https://picsum.photos/seed/cheese/800/600'
+    category: 'Chicken Platters',
+    imageUrl: 'https://drive.google.com/thumbnail?id=18CE6SHJIdx3vYIY0ES48_xD1T2YarqLF&sz=s800'
   },
   {
     id: '3',
-    title: 'Fresh Sourdough',
-    description: 'Artisanal sourdough bread baked daily.',
+    title: 'Beef Stroganoff',
+    description: 'sample items please reload the menu.',
     price: 500000,
-    category: 'Bread',
-    imageUrl: 'https://picsum.photos/seed/bread/800/600'
+    category: 'Steak & Beef Platters',
+    imageUrl: 'https://drive.google.com/thumbnail?id=18CE6SHJIdx3vYIY0ES48_xD1T2YarqLF&sz=s800'
   }
 ];
 

@@ -60,7 +60,7 @@ export default function App() {
   };
 
   const resolveImageUrl = (url: string) => {
-    if (!url) return 'https://picsum.photos/seed/bakery/800/600';
+    if (!url) return 'https://drive.google.com/thumbnail?id=18CE6SHJIdx3vYIY0ES48_xD1T2YarqLF&sz=s800';
     if (url.startsWith('http')) return url;
     
     // Handle local paths for GitHub Pages compatibility
