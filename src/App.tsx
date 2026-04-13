@@ -102,7 +102,7 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-bakery-cream/80 backdrop-blur-md border-b border-bakery-crust/10">
+      <header className="sticky top-0 z-50 bg-bakery-crust/80 backdrop-blur-md border-b border-bakery-crust/10">
         <div className="max-w-7xl mx-auto px-4 h-24 flex items-center justify-between">
           <div className="flex justify-center items-center w-full">
             <img 
@@ -129,7 +129,7 @@ export default function App() {
           >
             <ShoppingBag className="w-6 h-6" />
             {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-bakery-warm text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-bakery-cream text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
                 {cartCount}
               </span>
             )}
