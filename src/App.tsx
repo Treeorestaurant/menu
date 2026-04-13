@@ -265,7 +265,7 @@ export default function App() {
               </li>
             </ul>
           </div>
-          
+         </div> 
         <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-bakery-cream/10 text-center text-bakery-cream/40 text-sm">
           © {new Date().getFullYear()} {RESTAURANT_NAME}. All rights reserved.
         </div>
