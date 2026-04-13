@@ -127,7 +127,7 @@ export default function App() {
             onClick={() => setIsCartOpen(true)}
             className="relative p-2 hover:bg-bakery-flour rounded-full transition-colors"
           >
-            <ShoppingBag className="w-6 h-6" />
+            <ShoppingBag className="w-6 h-6 text-bakery-cream" />
             {cartCount > 0 && (
               <span className="absolute -top-1 -right-1 bg-bakery-cream text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
                 {cartCount}
