@@ -104,9 +104,9 @@ export default function App() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-bakery-cream/80 backdrop-blur-md border-b border-bakery-crust/10">
         <div className="max-w-7xl mx-auto px-4 h-24 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex justify-center items-center w-full">
             <img 
-              src="https://drive.google.com/thumbnail?id=1TidsVxWLL-N-7CXY4eVMP90Ze_YWoxkR&sz=s800" 
+              src="https://drive.google.com/thumbnail?id=1JtI-8C6A7oxKRnEGLqCVXT46BxdjpkNY&sz=s800" 
               alt={RESTAURANT_NAME} 
               className="h-30 w-auto object-contain"
               onError={(e) => {
