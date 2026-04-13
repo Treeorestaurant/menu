@@ -153,16 +153,16 @@ export default function App() {
             />
           </div>
 
-          <div className="flex gap-2 overflow-x-auto pb-2 no-scrollbar justify-center">
+          <div className="flex gap-2 overflow-x-auto pb-2 no-scrollbar justify-center [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 className={cn(
-                  "px-6 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap",
+                  "shrink-0 px-6 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap",
                   selectedCategory === cat 
                     ? "bg-bakery-crust text-bakery-cream shadow-md" 
-                    : "bg-white text-bakery-crust border border-bakery-crust/10 hover:border-bakery-crust/30"
+                    : "bg-white text-bakery-crust border border-bakery-crust/10 hover:border-bakery-crust/30 "
                 )}
               >
                 {cat}
@@ -245,7 +245,7 @@ export default function App() {
           <div className="space-y-4">
             <h3 className="text-3xl font-serif">{RESTAURANT_NAME}</h3>
             <p className="text-bakery-cream/60 italic">
-              Bringing the authentic taste of Lebanese baking to your table, every single day.
+              Bringing the authentic taste of Western food to your table, every single day.
             </p>
           </div>
           <div className="space-y-4">
@@ -257,23 +257,15 @@ export default function App() {
               </li>
               <li className="flex items-center gap-3 text-bakery-cream/80">
                 <MapPin className="w-4 h-4 text-bakery-gold" />
-                <span>Lebanon, Your City</span>
+                <span>Lebanon, Tripoli</span>
               </li>
               <li className="flex items-center gap-3 text-bakery-cream/80">
                 <Clock className="w-4 h-4 text-bakery-gold" />
-                <span>Daily: 7:00 AM - 10:00 PM</span>
+                <span>Daily: 10:00 AM - 11:00 PM</span>
               </li>
             </ul>
           </div>
-          <div className="space-y-4">
-            <h4 className="font-bold uppercase tracking-widest text-sm text-bakery-gold">Quick Links</h4>
-            <div className="flex flex-col gap-2">
-              <a href="#" className="text-bakery-cream/80 hover:text-bakery-gold transition-colors">Our Story</a>
-              <a href="#" className="text-bakery-cream/80 hover:text-bakery-gold transition-colors">Locations</a>
-              <a href="#" className="text-bakery-cream/80 hover:text-bakery-gold transition-colors">Privacy Policy</a>
-            </div>
-          </div>
-        </div>
+          
         <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-bakery-cream/10 text-center text-bakery-cream/40 text-sm">
           © {new Date().getFullYear()} {RESTAURANT_NAME}. All rights reserved.
         </div>
