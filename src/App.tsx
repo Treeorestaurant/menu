@@ -114,46 +114,54 @@ export default function App() {
     <div className="min-h-screen flex flex-col bg-bakery-cream">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-bakery-crust/95 backdrop-blur-md border-b border-bakery-crust/10 shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 h-24 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="max-w-7xl mx-auto px-4 h-32 md:h-40 flex items-center justify-between relative">
+          {/* Left Side: Back Button */}
+          <div className="z-10 w-12">
             {selectedMainCategory && (
               <button 
                 onClick={() => setSelectedMainCategory(null)}
                 className="p-2 hover:bg-bakery-cream/20 rounded-full transition-colors text-bakery-cream"
               >
-                <X className="w-6 h-6" />
+                <X className="w-8 h-8" />
               </button>
             )}
-            <div className="flex justify-center items-center">
+          </div>
+
+          {/* Center: Logo */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+            <div className="flex flex-col items-center pointer-events-auto">
               <img 
                 src="https://drive.google.com/thumbnail?id=1JtI-8C6A7oxKRnEGLqCVXT46BxdjpkNY&sz=s800" 
                 alt={RESTAURANT_NAME} 
-                className="h-16 md:h-20 w-auto object-contain"
+                className="h-24 md:h-32 w-auto object-contain"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
                   e.currentTarget.nextElementSibling?.classList.remove('hidden');
                 }}
               />
-              <div className="hidden w-12 h-12 bg-bakery-gold rounded-full flex items-center justify-center text-bakery-crust font-serif text-2xl shadow-sm border-2 border-bakery-warm">
+              <div className="hidden w-16 h-16 bg-bakery-gold rounded-full flex items-center justify-center text-bakery-crust font-serif text-3xl shadow-sm border-2 border-bakery-warm">
                 T
               </div>
-              <h1 className="ml-3 text-xl md:text-2xl font-bold tracking-tight text-bakery-cream hidden sm:block">
+              <h1 className="mt-1 text-xl md:text-2xl font-bold tracking-tight text-bakery-cream hidden sm:block">
                 {RESTAURANT_NAME}
               </h1>
             </div>
           </div>
 
-          <button 
-            onClick={() => setIsCartOpen(true)}
-            className="relative p-2 hover:bg-bakery-cream/20 rounded-full transition-colors"
-          >
-            <ShoppingBag className="w-6 h-6 text-bakery-cream" />
-            {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-bakery-warm text-bakery-crust text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center">
-                {cartCount}
-              </span>
-            )}
-          </button>
+          {/* Right Side: Cart Button */}
+          <div className="z-10 w-12 flex justify-end">
+            <button 
+              onClick={() => setIsCartOpen(true)}
+              className="relative p-2 hover:bg-bakery-cream/20 rounded-full transition-colors"
+            >
+              <ShoppingBag className="w-8 h-8 text-bakery-cream" />
+              {cartCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-bakery-warm text-bakery-crust text-[12px] font-bold w-6 h-6 rounded-full flex items-center justify-center shadow-sm">
+                  {cartCount}
+                </span>
+              )}
+            </button>
+          </div>
         </div>
       </header>
 
