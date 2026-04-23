@@ -4,10 +4,10 @@
 @theme {
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Inter", sans-serif;
-  
+
   --color-bakery-cream: #5d6b4c;
   --color-bakery-flour: #2b2b2b;
-  --color-bakery-crust: #b79f7c;
+  --color-bakery-crust: #e8ca9e;
   --color-bakery-warm: #f3efe7;
   --color-bakery-gold: #383838;
   --color-bakery-red: #a8c07e;
@@ -17,14 +17,21 @@
   body {
     @apply bg-bakery-cream text-bakery-crust font-sans antialiased;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-serif;
   }
 }
+
 @utility scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
